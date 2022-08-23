@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ThoseSneakers</title>
+    <link rel="icon" href="../imagenes/icono.ico" />
+    <link rel="stylesheet" type="text/css" href="../Estilo/estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/3fbce43d53.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="nav__ul">
+          <li id="Inicio" class="nav__li"><a href="../Index.html">Inicio</a></li>
+          <li class="nav__li"><a href="Catalogo.html">Catalogo</a></li>
+          <li class="nav__li"><a href="Ofertas.html">OFERTAS!</a></li>
+          <li class="nav__li"><a href="Registrate.html">Registrate</a></li>
+        </ul>
+        <ul class="nav__responsive-ul">
+          <div class="nav__responsive-button-container" id="boton">
+          <div class="nav__responsive-button fa-solid fa-bars"></div>
+          </div>
+          <div class="nav__li-container">
+            <li id="Inicio" class="nav__responsive-li"><a href="../Index.html">Inicio</a></li>
+            <li class="nav__responsive-li"><a href="Catalogo.html">Catalogo</a></li>
+            <li class="nav__responsive-li"><a href="Ofertas.html">OFERTAS!</a></li>
+            <li class="nav__responsive-li"><a href="Registrate.html">Registrate</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <form action="" method="get" enctype="multipart/form-data" class="form">
+      <fieldset class="form_fieldset">
+        <h3 class="tituloRegistrate">Registrate</h3>
+        <div class="form_fieldset_div">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <br />
+        <div class="form_fieldset_div">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" required />
+        </div>
+        <br />
+        <div class="form_fieldset_div">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <br />
+        <div class="form_fieldset_div">
+          <label for="contraseña">Contraseña</label>
+          <input type="password" id="contraseña" name="contraseña" required />
+        </div>
+        <br /><br />
+        <div class="form_fieldset_div">
+          <label for="sexo">Sexo</label>
+          <select name="Sexo" id="sexo">
+            <option value="indefinido">Indefinido</option>
+            <option value="femenino">Femenino</option>
+            <option value="masculino">Masculino</option>
+          </select>
+        </div>
+        <br />
+        <div class="form_fieldset_div">
+          <label for="condiciones"></label>
+          <input
+            type="checkbox"
+            id="condiciones"
+            name="condiciones"
+            required
+          />Aceptar términos y condiciones
+        </div>
+        <br />
+        <div class="form_fieldset_div">
+          <input type="submit" />
+        </div>
+      </fieldset>
+    </form>
+    <footer class="footer">
+      <!--En un futuro va a tener formalidades-->
+      <div class="footer_mejorar">
+        <h4 class="footer_mejorar_h4">Ayudanos a mejorar</h4>
+        <div class="footer_mejorar_sugerencias">
+          <a href="Sugerencias.html">Sugerencias</a>
+        </div>
+      </div>
+      <div class="footer_redes">
+        <h4 class="footer_redes_h4">Redes</h4>
+        <div class="footer_redes_ig">
+          <a href="https://www.instagram.com/lauti_bas/">Instagram</a>
+        </div>
+        <div class="footer_redes_fb">
+          <a href="https://www.facebook.com/">Facebook</a>
+        </div>
+      </div>
+      <img class="footer_logo" src="../imagenes/Ts.png" />
+      <h6 class="derechos">Derechos Reservados</h6>
+    </footer>
+  </body>
+</html>

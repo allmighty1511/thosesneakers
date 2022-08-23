@@ -1,0 +1,503 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Prompt", sans-serif;
+}
+
+.nav__ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__li a{
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: bold;
+  padding: 0px 110px;
+  box-shadow: 3px 3px 4px #f76700;
+  font-weight: 500;
+}
+
+.nav__ul #Inicio {
+  margin-left: 24px;
+}
+
+.nav__responsive-ul{
+  display: none;
+}
+
+.titulo1 {
+  font-weight: 900;
+  color: #000000;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 150px;
+  text-shadow: 0 0 20px #fefcc9, 2px -2px 3px #feec85, -4px -4px 5px #ffae34,
+    5px -10px 6px #ec760c, -5px -12px 8px #cd4606, 0 -15px 20px #973716,
+    2px -15px 20px #451b0e;
+}
+
+body {
+  background-color: #000000;
+}
+
+.speech {
+  text-align: center;
+  color: #f76700;
+  text-shadow: 2px 2px #ffffff;
+  font-weight: 900;
+}
+
+.parallax {
+  background-image: url("../Imagenes/NavImg.png");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.beneficios{
+  margin-top: -70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#compras, #envio, #cambio {
+  text-align: center;
+}
+
+
+h4 {
+  color: #ffffff;
+  font-weight: 500;
+}
+p {
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.carrusel {
+  background-color: #ffffff;
+}
+
+.carrusel_titulo {
+  text-align: center;
+  color: #f76700;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+
+.carrusel_modelos{
+  display: flex;
+  justify-content: space-between;
+}
+
+.carrusel_imagen1, .carrusel_imagen2, .carrusel_imagen3, .carrusel_imagen4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #f76700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 20%;
+  border-radius: 10px;
+  transition: all 1s;}
+
+.carrusel_imagen1:hover{
+  background-color: #f76700;
+}
+
+.carrusel_imagen2:hover{
+  background-color: #f76700;
+}
+
+.carrusel_imagen3:hover{
+  background-color: #f76700;
+}
+
+.carrusel_imagen4:hover{
+  background-color: #f76700;
+}
+
+
+.carrusel_imagen1_h5 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.carrusel_imagen2_h5 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.carrusel_imagen3_h5 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.carrusel_imagen4_h5 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.recomendacion {
+  background-color: #ffffff;
+}
+
+.recomendacion_titulo {
+  text-align: center;
+  color: #f76700;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.recomendacion_subtitulo {
+  text-align: center;
+}
+
+.recomendacion_video {
+  text-align: center;
+}
+
+.recomendacion__responsive-video{
+  display: none;
+}
+
+.marcas {
+  background-color: #ffffff;
+}
+
+.marcas_titulo {
+  text-align: center;
+  color: #f76700;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.marcas_imagenes{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #f76700;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+}
+
+.footer_mejorar {
+  display: inline-block;
+  margin-left: 20px;
+  position: absolute;
+}
+
+.footer_redes {
+  display: inline-block;
+  margin-left: 250px;
+}
+
+.footer_mejorar_h4 {
+  font-size: 20px;
+}
+
+.footer_redes_h4 {
+  font-size: 20px;
+}
+
+.footer_logo {
+  height: 100px;
+  margin-left: 1000px;
+  margin-top: -70px;
+}
+
+.derechos {
+  display: inline-block;
+  position: relative;
+  margin-left: 993px;
+  font-weight: 700;
+}
+
+.flecha {
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.flecha_responsive{
+  display: none;
+}
+
+.tituloCatalogo,
+.tituloOfertas {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 100px;
+  text-decoration: underline #f76700;
+}
+
+.productos {
+  display: flex;
+  margin-top: 100px;
+  background: #ffffff;
+  justify-content: space-around;
+}
+
+.productos_zapas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #f76700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 20%;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  justify-content: center !important;
+}
+
+.form_fieldset_div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  align-items: center;
+  background-color: #ffffff;
+  margin-top: 70px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 4px #f76700;
+}
+
+.tituloRegistrate{
+  margin-bottom: 20px;
+  margin-top: -40px;
+  text-decoration: underline #f76700;
+}
+
+.sugerencias{
+  background-color: #ffffff;
+
+}
+
+.sugerencias_titulo{
+  text-decoration: underline #f76700;
+  margin-bottom: 20px;
+  margin-top: -30px;
+}
+
+.enviar{
+  display: flex;
+  justify-content: center;
+}
+
+.sugerencias textarea{
+  height: 226px;
+  width: 565px;
+}
+
+.contenedor-index{
+  display: grid;
+  grid-template-areas:
+  "header header header"
+  "beneficios beneficios beneficios"
+  "carrusel carrusel carrusel"
+  "recomendacion recomendacion recomendacion"
+  "marcas marcas marcas"
+  "footer footer footer";
+  row-gap: 100px;
+}
+
+header{
+  grid-area: header;
+}
+.beneficios{
+  grid-area: beneficios;
+}
+.carrusel{
+  grid-area: carrusel;
+}
+.recomendacion{
+  grid-area: recomendacion;
+}
+.marcas{
+  grid-area: marcas;
+}
+footer{
+  grid-area: footer;
+}
+
+.contenedor-catalogo{
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "productos productos productos"
+  "productos productos productos"
+  "footer footer footer";
+  row-gap: 100px;
+}
+
+.productos{
+  grid-area: productos;
+}
+
+@media (max-width:760px)  {
+  .contenedor-index{
+    grid-template-areas: 
+    "header header header"
+    "beneficios beneficios beneficios"
+    "carrusel carrusel carrusel"
+    "recomendacion recomendacion recomendacion"
+    "marcas marcas marcas"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+  }
+
+  .nav__responsive-button-container{
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    background-color: #f76700;
+    margin-top: -64px;
+    z-index: 100;
+  }
+
+  .nav__responsive-button{
+    padding: 6px 6px;
+  }
+
+  .nav__ul{
+    display: none;
+  }
+
+  .nav{
+    height: 37px;
+    width: 100%;;
+  }
+
+  .nav__responsive-ul{
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin-top: 37px;
+    padding-top: 27px;
+    height: 37px;
+  }
+
+  .nav__li-container{
+    position: relative;
+    top: -1000px;
+    height: calc(100vh - 64px);
+    background-color: #000000;
+    z-index: 1;
+    transition: 1s;
+    width: 75%;
+    padding-top: 27px;
+}
+
+  .nav__responsive-li{
+    width: 100%;
+    padding: 9px 20px;
+  }
+
+  .nav__responsive-li a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .nav__responsive-ul:hover > .nav__li-container{
+    top: -27px;
+  }
+
+  .titulo1{
+    font-size: 48px;
+    margin-top: 70px
+  }
+
+  .speech{
+    color: #f76700;
+    font-size: 12px;
+    margin-top: 40px
+  }
+
+  .parallax{
+    background-image: url(../Imagenes/NavImg.png);
+    height: 280px;
+    background-attachment: inherit
+  }
+
+.beneficios{
+  flex-direction: column;
+  align-items: center;
+}
+
+#envio, #cambio{
+  margin-top: 50px ;
+}
+
+.carrusel_imagen3, .carrusel_imagen3_h5, .carrusel_imagen4, .carrusel_imagen4_h5{
+  display: none;
+}
+
+.carrusel_modelos{
+  justify-content: space-around;
+}
+
+.recomendacion_video{
+  display: none;
+}
+
+.recomendacion__responsive-video{
+  text-align: center;
+  display: block;
+}
+
+.footer_logo, .derechos{
+  display: none;
+}
+
+.flecha{
+  display: none;
+}
+
+.flecha_responsive{
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.contenedor-catalogo{
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "productos productos productos"
+  "productos productos productos"
+  "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 50px;
+}
+
+}
