@@ -22,6 +22,10 @@
   font-weight: 500;
 }
 
+.nav__li a:hover{
+  color: #f76700;;
+}
+
 .nav__ul #Inicio {
   margin-left: 24px;
 }
@@ -39,6 +43,17 @@
   text-shadow: 0 0 20px #fefcc9, 2px -2px 3px #feec85, -4px -4px 5px #ffae34,
     5px -10px 6px #ec760c, -5px -12px 8px #cd4606, 0 -15px 20px #973716,
     2px -15px 20px #451b0e;
+  animation-name: aparecer;
+  animation-duration: 3s;
+}
+
+@keyframes aparecer{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 body {
