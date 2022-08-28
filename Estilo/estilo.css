@@ -107,7 +107,9 @@ p {
   margin-bottom: 20px;
   width: 20%;
   border-radius: 10px;
-  transition: all 1s;}
+  transition: all 1s;
+  object-fit: contain;
+}
 
 .carrusel_imagen1:hover{
   background-color: #f76700;
@@ -253,6 +255,7 @@ footer a {
   margin-top: 100px;
   background: #ffffff;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .productos_zapas {
@@ -264,6 +267,12 @@ footer a {
   margin-bottom: 20px;
   width: 20%;
   border-radius: 10px;
+  transition: all 1s;
+  object-fit: contain;
+}
+
+.productos_zapas:hover{
+  background-color: #f76700;
 }
 
 .form {
@@ -295,9 +304,7 @@ footer a {
 }
 
 .sugerencias{
-  background-color: #ffffff;
-
-}
+  background-color: #ffffff;}
 
 .sugerencias_titulo{
   text-decoration: underline #f76700;
@@ -350,14 +357,56 @@ footer{
   display: grid;
   grid-template-areas: 
   "header header header"
+  "tituloCatalogo tituloCatalogo tituloCatalogo"
   "productos productos productos"
   "productos productos productos"
   "footer footer footer";
-  row-gap: 100px;
+  row-gap: 50px;
 }
 
 .productos{
   grid-area: productos;
+}
+
+.tituloCatalogo{
+  grid-area: tituloCatalogo;
+}
+
+.contenedor-ofertas{
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "tituloOfertas tituloOfertas tituloOfertas"
+  "productos productos productos"
+  "productos productos productos"
+  "footer footer footer";
+  row-gap: 50px;
+}
+
+.tituloOfertas{
+  grid-area: tituloOfertas;
+}
+
+.contenedor-registrate{
+display: grid;
+grid-template-areas: 
+"header header header"
+"form form form"
+"footer footer footer";
+row-gap: 50px;
+}
+
+.form{
+  grid-area: form;
+}
+
+.contenedor-sugerencias{
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "form form form"
+  "footer footer footer";
+  row-gap: 50px;
 }
 
 @media (max-width:760px)  {
@@ -463,6 +512,10 @@ footer{
   justify-content: space-around;
 }
 
+.carrusel_imagen1, .carrusel_imagen1_h5, .carrusel_imagen2, .carrusel_imagen2_h5{
+  width: 40%;
+}
+
 .recomendacion_video{
   display: none;
 }
@@ -493,11 +546,72 @@ footer{
   display: grid;
   grid-template-areas: 
   "header header header"
+  "tituloCatalogo tituloCatalogo tituloCatalogo"
   "productos productos productos"
   "productos productos productos"
   "footer footer footer";
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 50px;
+}
+
+.tituloCatalogo{
+  margin-top: 0px;
+}
+
+.productos{
+  margin-top: 0px;
+}
+
+.productos_zapas{
+  width: 40%;
+}
+
+.contenedor-ofertas{
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "tituloOfertas tituloOfertas tituloOfertas"
+  "productos productos productos"
+  "productos productos productos"
+  "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 50px;
+}
+
+.tituloOfertas{
+  margin-top: 0px;
+}
+
+.contenedor-registrate{
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "form form form"
+  "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 50px;
+}
+
+.form{
+  width: 90%;
+  margin-left: 15px;
+}
+
+.contenedor-sugerencias{
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "form form form"
+  "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 50px;
+}
+
+
+
+.sugerencias textarea{
+  height: 300px;
+  width: 200px;
 }
 
 }
