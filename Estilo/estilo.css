@@ -67,7 +67,7 @@ body {
 }
 
 .parallax {
-  background-image: url("../Imagenes/NavImg.png");
+  background-image: url("../Imagenes/navimg.png");
   height: 500px;
   background-attachment: fixed;
   background-position: center;
