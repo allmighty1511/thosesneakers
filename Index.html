@@ -16,8 +16,7 @@
   </head>
   <body id="body">
     <div class="contenedor-index">
-    <header class="parallax">
-      <nav class="navbar navbar-expand-lg navbar-dark ">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <img class="navbar-brand" src="imagenes/Ts.png" />
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,35 +25,36 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="paginas/catalogo.html">Catalogo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="paginas/ofertas.html">OFERTAS!</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link" href="paginas/registrate.html">Registrate</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <header class="parallax">
         <h1 class="titulo1">ThoseSneakers</h1>
         <h4 class="speech">
           No podes comprar felicidad, pero si un par de zapas, que es casi lo
           mismo :)
         </h4>
-      
     </header>
-    <div class="beneficios">
-    <div id="compras">
+    <div class="container-fluid">
+    <div class="beneficios row">
+    <div id="compras" class="col-l-3">
       <img src="imagenes/iconos/credit-card.png" alt="tarjetas" height="50px" />
       <h4>Compra como mas te guste</h4>
       <p>Aceptamos todos los medios de pago.</p>
     </div>
-    <div id="envio">
+    <div id="envio" class="col-l-3">
       <img
         src="imagenes/iconos/delivery-truck.png"
         alt="camion"
@@ -63,14 +63,15 @@
       <h4>Calzate en menos de 48hs</h4>
       <p>Recibi tu pedido en 48hs hábiles.</p>
     </div>
-    <div id="cambio">
-      <img src="imagenes/iconos/exchange.png" alt="cambio" height="50px" />
+    <div id="cambio" class="col-l-3">
+      <img src="imagenes/iconos/exchange.png" alt="cambio" height="50px"/>
       <h4>No te convencienron las zapas?</h4>
       <p>Tenes hasta 4 dias para devolverlas sin costo.</p>
     </div>
     </div>
-
+    </div>
     <div id="carouselExampleDark" class="carousel carousel-dark slide carrusel" data-bs-ride="carousel">
+      <h3 class="carrusel_titulo">Ultimos ingresos</h3>
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -78,24 +79,21 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-          <img src="imagenes/Modelos/Modelo1.png" class="d-block w-50" alt="...">
+          <img src="imagenes/Modelos/Modelo1.png" class="d-block w-50 mx-auto" alt="Jordan1">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5>Jordan 1 High</h5>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="imagenes/modelos/Modelo2.png" class="d-block w-50" alt="...">
+          <img src="imagenes/modelos/Modelo2.png" class="d-block w-50 mx-auto" alt=NewBalance">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5>New Balance 550</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="imagenes/modelos/Modelo3.png" class="d-block w-50" alt="...">
+          <img src="imagenes/modelos/Modelo3.png" class="d-block w-50 mx-auto" alt="Forum">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5>Adidas Forum x Bad Bunny</h5>
           </div>
         </div>
       </div>
@@ -108,24 +106,6 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-    <!--<div class="carrusel"><!--Los modelos iran deslizandose a modo carrusel
-      <h3 class="carrusel_titulo">Ultimos ingresos</h3>
-      <div class="carrusel_modelos">
-      <div class="carrusel_imagen1">
-        <img src="imagenes/Modelos/Modelo1.png" alt="Jordan1" height="100" /> <b>Jordan 1 High</b>
-      </div>
-      <div class="carrusel_imagen2">
-        <img src="imagenes/modelos/Modelo2.png" alt="NB" height="100" /> <b>New Balance 550</b>
-      </div>
-      <div class="carrusel_imagen3">
-        <img src="imagenes/modelos/Modelo3.png" alt="Forum" height="100" /> <b>Adidas forum x BadBunny</b>
-      </div>
-      <div class="carrusel_imagen4">
-        <img src="imagenes/modelos/Modelo4.png" alt="Vans" height="100" /> <b>Vans Old Skool</b>
-      </div>
-      </div>
-    </div>-->
     <div class="recomendacion">
       <h3 class="recomendacion_titulo">Recomendacion de la casa</h3>
       <h6 class="recomendacion_subtitulo">
@@ -195,6 +175,6 @@
         <img src="imagenes/arrow.png" alt="Arrow" height="40" class="img_flecha"/>
       </a>
     </div>
-  </div>
+  </divclass=>
   </body>
 </html>

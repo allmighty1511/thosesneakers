@@ -85,15 +85,7 @@ nav{
   margin-bottom: 50px;
 }
 
-.beneficios{
-  margin-top: -70px;
-  display: flex;
-  justify-content: space-between;
-}
 
-#compras, #envio, #cambio {
-  text-align: center;
-}
 
 
 h4 {
@@ -110,12 +102,18 @@ p {
   background-color: #fff;
   width: 100%;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .carrusel_titulo {
   text-align: center;
   color: #f76700;
   font-weight: 700;
+  padding-bottom: 50px;
+}
+
+.carousel-item{
   padding-bottom: 50px;
 }
 
@@ -175,6 +173,8 @@ p {
 }
 
 .recomendacion {
+  margin-top: 50px;
+  margin-bottom: 50px;
   background-color: #ffffff;
 }
 
@@ -198,6 +198,8 @@ p {
 }
 
 .marcas {
+  margin-top: 50px;
+  margin-bottom: 50px;
   background-color: #ffffff;
 }
 
@@ -362,16 +364,22 @@ footer a {
   width: 565px;
 }
 
+
+
 .contenedor-index{
   display: grid;
   grid-template-areas:
+  "nav nav nav"
   "header header header"
   "beneficios beneficios beneficios"
   "carrusel carrusel carrusel"
   "recomendacion recomendacion recomendacion"
   "marcas marcas marcas"
   "footer footer footer";
-  row-gap: 100px;
+}
+
+.navbar{
+  grid-area: nav;
 }
 
 header{
@@ -451,7 +459,8 @@ row-gap: 50px;
 
 @media (max-width:760px)  {
   .contenedor-index{
-    grid-template-areas: 
+    grid-template-areas:
+    "nav nav nav" 
     "header header header"
     "beneficios beneficios beneficios"
     "carrusel carrusel carrusel"
@@ -459,7 +468,6 @@ row-gap: 50px;
     "marcas marcas marcas"
     "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 50px;
   }
 
   .nav__responsive-button-container{
@@ -538,6 +546,7 @@ row-gap: 50px;
 .beneficios{
   flex-direction: column;
   align-items: center;
+  margin-top: -10px;
 }
 
 #envio, #cambio{
