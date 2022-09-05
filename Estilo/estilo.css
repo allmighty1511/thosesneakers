@@ -12,25 +12,8 @@ nav{
   width: 40px;
 }
 
-.nav__ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-}
 
-.nav__li a{
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #000000;
-  font-weight: bold;
-  padding: 0px 110px;
-  box-shadow: 3px 3px 4px #f76700;
-  font-weight: 500;
-}
-
-.nav__li a:hover{
+.navbar a:hover{
   color: #f76700;;
 }
 
@@ -38,9 +21,6 @@ nav{
   margin-left: 24px;
 }
 
-.nav__responsive-ul{
-  display: none;
-}
 
 .titulo1 {
   font-weight: 900;
@@ -85,12 +65,15 @@ nav{
   margin-bottom: 50px;
 }
 
-
-
+.beneficios{
+  text-align: center;
+  padding-bottom: 50px;
+}
 
 h4 {
   color: #ffffff;
   font-weight: 500;
+font-size: larger;
 }
 
 p {
@@ -103,7 +86,7 @@ p {
   width: 100%;
   align-items: center;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .carrusel_titulo {
@@ -111,70 +94,18 @@ p {
   color: #f76700;
   font-weight: 700;
   padding-bottom: 50px;
+  text-shadow: 3px 3px 3px #000;
 }
 
 .carousel-item{
   padding-bottom: 50px;
+  text-shadow: 1px 1px 1px #000
 }
 
-.carrusel_modelos{
-  display: flex;
-  justify-content: space-between;
-}
-
-.carrusel_imagen1, .carrusel_imagen2, .carrusel_imagen3, .carrusel_imagen4{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid #f76700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 20%;
-  border-radius: 10px;
-  transition: all 1s;
-  object-fit: contain;
-}
-
-.carrusel_imagen1:hover{
-  background-color: #f76700;
-}
-
-.carrusel_imagen2:hover{
-  background-color: #f76700;
-}
-
-.carrusel_imagen3:hover{
-  background-color: #f76700;
-}
-
-.carrusel_imagen4:hover{
-  background-color: #f76700;
-}
-
-
-.carrusel_imagen1_h5 {
-  text-align: center;
-  font-weight: 600;
-}
-
-.carrusel_imagen2_h5 {
-  text-align: center;
-  font-weight: 600;
-}
-
-.carrusel_imagen3_h5 {
-  text-align: center;
-  font-weight: 600;
-}
-
-.carrusel_imagen4_h5 {
-  text-align: center;
-  font-weight: 600;
-}
 
 .recomendacion {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   background-color: #ffffff;
 }
 
@@ -183,6 +114,7 @@ p {
   color: #f76700;
   font-weight: 700;
   padding-bottom: 30px;
+  text-shadow: 3px 3px 3px #000
 }
 
 .recomendacion_subtitulo {
@@ -198,7 +130,6 @@ p {
 }
 
 .marcas {
-  margin-top: 50px;
   margin-bottom: 50px;
   background-color: #ffffff;
 }
@@ -208,6 +139,7 @@ p {
   color: #f76700;
   font-weight: 700;
   padding-bottom: 30px;
+  text-shadow: 3px 3px 3px #000
 }
 
 .marcas_imagenes{
@@ -311,10 +243,15 @@ footer a {
   border-radius: 10px;
   transition: all 1s;
   object-fit: contain;
+  box-shadow: 4px 4px 1px 0 rgba(0,0,0,0.2);
 }
 
 .productos_zapas:hover{
   background-color: #f76700;
+}
+
+.card-text, .card-title{
+  color: #000;
 }
 
 .form {
@@ -364,19 +301,6 @@ footer a {
   width: 565px;
 }
 
-
-
-.contenedor-index{
-  display: grid;
-  grid-template-areas:
-  "nav nav nav"
-  "header header header"
-  "beneficios beneficios beneficios"
-  "carrusel carrusel carrusel"
-  "recomendacion recomendacion recomendacion"
-  "marcas marcas marcas"
-  "footer footer footer";
-}
 
 .navbar{
   grid-area: nav;
@@ -458,73 +382,7 @@ row-gap: 50px;
 }
 
 @media (max-width:760px)  {
-  .contenedor-index{
-    grid-template-areas:
-    "nav nav nav" 
-    "header header header"
-    "beneficios beneficios beneficios"
-    "carrusel carrusel carrusel"
-    "recomendacion recomendacion recomendacion"
-    "marcas marcas marcas"
-    "footer footer footer";
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 
-  .nav__responsive-button-container{
-    position: absolute;
-    width: 100%;
-    font-size: 25px;
-    background-color: #f76700;
-    margin-top: -64px;
-    z-index: 100;
-  }
-
-  .nav__responsive-button{
-    padding: 6px 6px;
-  }
-
-  .nav__ul{
-    display: none;
-  }
-
-  .nav{
-    height: 37px;
-    width: 100%;;
-  }
-
-  .nav__responsive-ul{
-    display: block;
-    position: absolute;
-    width: 100%;
-    margin-top: 37px;
-    padding-top: 27px;
-    height: 37px;
-  }
-
-  .nav__li-container{
-    position: relative;
-    top: -1000px;
-    height: calc(100vh - 64px);
-    background-color: #000000;
-    z-index: 1;
-    transition: 1s;
-    width: 75%;
-    padding-top: 27px;
-}
-
-  .nav__responsive-li{
-    width: 100%;
-    padding: 9px 20px;
-  }
-
-  .nav__responsive-li a{
-    color: #ffffff;
-    text-decoration: none;
-  }
-
-  .nav__responsive-ul:hover > .nav__li-container{
-    top: -27px;
-  }
 
   .titulo1{
     font-size: 48px;
@@ -543,11 +401,6 @@ row-gap: 50px;
     background-attachment: inherit
   }
 
-.beneficios{
-  flex-direction: column;
-  align-items: center;
-  margin-top: -10px;
-}
 
 #envio, #cambio{
   margin-top: 50px ;

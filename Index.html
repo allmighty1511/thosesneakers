@@ -15,8 +15,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </head>
   <body id="body">
-    <div class="contenedor-index">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-dark col-12">
         <div class="container-fluid">
           <img class="navbar-brand" src="imagenes/Ts.png" />
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,8 +25,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+              <li class="nav-item" id="Inicio">
+                <a class="nav-link" aria-current="page" href="Index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="paginas/catalogo.html">Catalogo</a>
@@ -40,37 +41,36 @@
           </div>
         </div>
       </nav>
-      <header class="parallax">
+      </div>
+      <div class="row">
+        <header class="parallax col-12">
         <h1 class="titulo1">ThoseSneakers</h1>
         <h4 class="speech">
           No podes comprar felicidad, pero si un par de zapas, que es casi lo
           mismo :)
         </h4>
-    </header>
-    <div class="container-fluid">
+      </header>
+      </div>
     <div class="beneficios row">
-    <div id="compras" class="col-l-3">
-      <img src="imagenes/iconos/credit-card.png" alt="tarjetas" height="50px" />
+    <div id="compras" class="col-12 col-xl-4">
+      <img src="imagenes/iconos/credit-card.png" alt="tarjetas" height="50px" class="compras"/>
       <h4>Compra como mas te guste</h4>
       <p>Aceptamos todos los medios de pago.</p>
     </div>
-    <div id="envio" class="col-l-3">
+    <div id="envio" class="col-12 col-xl-4">
       <img
-        src="imagenes/iconos/delivery-truck.png"
-        alt="camion"
-        height="50px"
-      />
+        src="imagenes/iconos/delivery-truck.png" alt="camion" height="50px" class="envio"/>
       <h4>Calzate en menos de 48hs</h4>
       <p>Recibi tu pedido en 48hs hábiles.</p>
     </div>
-    <div id="cambio" class="col-l-3">
-      <img src="imagenes/iconos/exchange.png" alt="cambio" height="50px"/>
+    <div id="cambio" class="col-12 col-xl-4">
+      <img src="imagenes/iconos/exchange.png" alt="cambio" height="50px" class="cambio"/>
       <h4>No te convencienron las zapas?</h4>
       <p>Tenes hasta 4 dias para devolverlas sin costo.</p>
     </div>
     </div>
-    </div>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide carrusel" data-bs-ride="carousel">
+    <div class="row">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide carrusel col-12" data-bs-ride="carousel">
       <h3 class="carrusel_titulo">Ultimos ingresos</h3>
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -106,7 +106,9 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="recomendacion">
+    </div>
+    <div class="row">
+    <div class="recomendacion col-12">
       <h3 class="recomendacion_titulo">Recomendacion de la casa</h3>
       <h6 class="recomendacion_subtitulo">
         Te dejamos un video para que estes al dia con las ultimas tendencias
@@ -134,7 +136,9 @@
         ></iframe>
       </div>
     </div>
-    <div class="marcas">
+    </div>
+    <div class="row">
+    <div class="marcas col-12">
       <h3 class="marcas_titulo">Nuestras marcas</h3>
       <div class="marcas_imagenes">
       <img class="marcas_adidas" src="imagenes/Logos/adidas.png" alt="Adidas" height="50"/>
@@ -143,7 +147,9 @@
       <img class="marcas_vans" src="imagenes/Logos/vans.png" alt="Vans" height="50"/>
       </div>
     </div>
-    <footer class="footer">
+    </div>
+    <div class="row">
+    <footer class="footer col-12">
       <!--En un futuro va a tener formalidades-->
       <div class="cosas">
       <div class="footer_mejorar">
@@ -165,16 +171,17 @@
       <img class="footer_logo" src="imagenes/Ts.png" />
       <h6 class="derechos">Derechos Reservados</h6>
     </footer>
+    </div>
     <div class="flecha">
       <a href="#Inicio">
         <img src="imagenes/arrow.png" alt="Arrow" height="40" class="img_flecha" />
       </a>
     </div>
     <div class="flecha_responsive">
-      <a href="#boton">
+      <a href="#inicio">
         <img src="imagenes/arrow.png" alt="Arrow" height="40" class="img_flecha"/>
       </a>
     </div>
-  </divclass=>
+  </div>
   </body>
 </html>
