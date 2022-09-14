@@ -4,13 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <link rel="icon" href="imagenes/ts.ico" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/3fbce43d53.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3fbce43d53.js"
+      crossorigin="anonymous"
+    ></script>
     <title>ThoseSneakers</title>
   </head>
   <body id="body">
@@ -20,7 +31,7 @@
           <div class="container-fluid">
             <img class="navbar-brand" src="imagenes/ts.ico" />
             <button
-            id="boton"
+              id="boton"
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -32,19 +43,20 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
+              <!-- Agregue un ms-3 a los items. Esto hace 2 cosas, uno deja los items mas alejados y 2 en vision responsive los centra con el logo -->
               <ul class="navbar-nav">
-                <li class="nav-item" id="inicio">
+                <li class="nav-item ms-3" id="inicio">
                   <a class="nav-link" aria-current="page" href="index.html"
                     >Inicio</a
                   >
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ms-3">
                   <a class="nav-link" href="paginas/catalogo.html">Catalogo</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ms-3">
                   <a class="nav-link" href="paginas/ofertas.html">OFERTAS!</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ms-3">
                   <a class="nav-link" href="paginas/registrate.html"
                     >Registrate</a
                   >
@@ -101,7 +113,8 @@
           class="carousel carousel-dark slide col-12"
           data-bs-ride="carousel"
         >
-          <h3 class="carrusel_titulo">Ultimos ingresos</h3>
+          <!-- Agregue un MT-4 -->
+          <h3 class="carrusel_titulo mt-4">Ultimos ingresos</h3>
           <div class="carousel-indicators">
             <button
               type="button"
@@ -174,7 +187,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="recomendacion col-12">
+        <!-- Agregue un PY-4 -->
+        <div class="recomendacion col-12 py-4">
           <h3 class="recomendacion_titulo">Recomendacion de la casa</h3>
           <h6 class="recomendacion_subtitulo">
             Te dejamos un video para que estes al dia con las ultimas tendencias
@@ -204,7 +218,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="marcas col-12">
+        <!-- Agregue un MT-4 -->
+        <div class="marcas col-12 py-4">
           <h3 class="marcas_titulo">Nuestras marcas</h3>
           <div class="marcas_imagenes">
             <img
@@ -235,22 +250,25 @@
         </div>
       </div>
       <div class="row">
+        <!-- Le di un py-3 a 2 divs para que quede mejor acomodado -->
         <footer class="footer col-12">
-            <div class="mejorar">
-              <h4 class="footer_mejorar_h4">Ayudanos a mejorar</h4>
-              <div class="footer_mejorar_sugerencias">
-                <a href="paginas/sugerencias.html">Sugerencias</a>
-              </div>
+          <div class="mejorar py-3">
+            <h4 class="footer_mejorar_h4">Ayudanos a mejorar</h4>
+            <div class="footer_mejorar_sugerencias">
+              <a href="paginas/sugerencias.html">Sugerencias</a>
             </div>
-            <div class="redes">
-              <h4 class="footer_redes_h4">Redes</h4>
-              <div class="footer_redes_ig">
-                <a href="https://www.instagram.com/lauti_bas/" target="_blank">Instagram</a>
-              </div>
-              <div class="footer_redes_fb">
-                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-              </div>
+          </div>
+          <div class="redes py-3">
+            <h4 class="footer_redes_h4">Redes</h4>
+            <div class="footer_redes_ig">
+              <a href="https://www.instagram.com/lauti_bas/" target="_blank"
+                >Instagram</a
+              >
             </div>
+            <div class="footer_redes_fb">
+              <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </div>
+          </div>
           <img class="logo" src="imagenes/ts.ico" />
           <h6 class="derechos">Derechos Reservados</h6>
         </footer>
